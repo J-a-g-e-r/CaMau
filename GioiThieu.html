@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title><style>
+        #header {
+            background-color: rgb(209, 207, 203);
+            display:flow-root;
+        }
+        #header img {
+            float: left;
+        }
+        #header .span {
+           
+            height: 200px;
+        }
+        #header  h1 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 40px;
+            
+        }
+        #header h3 {
+            text-align: center;
+            font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        #content h2 {
+            background-color: rgb(231, 191, 139);
+            width: 80%;
+            height: 60px;
+            padding-top: 30px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: oblique;
+            font-style: italic;
+            animation: slideIn 3s ease forwards;
+        }
+        #content div p1 {
+            background-color: rgb(228, 209, 168);
+            display: inline-block;
+            width: 80%;
+            height: 40px;
+            padding-top: 20px;
+            font-family:monospace;
+            font-weight: 1000;
+            font-size: 20px;
+           
+        }
+        .doinet {
+            width: 80%;
+            text-align: left;
+            font-size: 20px;
+        }
+        #click a{
+            background-color: rgb(224, 190, 146);
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="header" width="100%"  height="200px">
+        <img src="data:image/jpeg;base64,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" width="25%" width="200px" ></img>
+        
+            <span>
+                <h1>WELCOME TO CA MAU</h1>
+                <h1>Môi trường xanh - Chất lượng sạch</h1>
+            </span>
+            
+    </div>
+    <div id="content" align="center" width="80%">
+        <span> <h2>HELLO, IT'S NICE TO MEET YOU</h2></span>
+        <img src="https://thamhiemmekong.com/wp-content/uploads/2020/02/mui-ca-mau-1.jpg" width="80%" height="400px">
+        <div><p1>ĐÔI NÉT VỀ VÙNG ĐẤT CÀ MAU</p1></div>
+        <div class="doinet">
+            <p >
+                Cà Mau, là điểm cuối cùng của miền Nam Việt Nam, nổi tiếng với cảnh quan thiên nhiên phong phú và đa dạng. Với hàng loạt các cánh đồng lúa, những kênh rạch uốn lượn và hệ sinh thái rừng ngập mặn, Cà Mau là một viên ngọc quý của đất nước. Bạn có thể bắt gặp những hình ảnh thơ mộng của những con ong bướm đang ngao du giữa những cánh đồng hoa màu sắc rực rỡ, hoặc đắm mình trong không gian yên bình của những con kênh nước mát lạnh, thú vị và hấp dẫn. Đến với Cà Mau, du khách sẽ được thưởng thức không chỉ là những trải nghiệm về thiên nhiên mà còn là sự phong phú và đa dạng về văn hóa, ẩm thực và đời sống dân dụng của vùng đất này.</p>
+        </div>
+        <div>
+            <p1>VĂN HÓA ẨM THỰC CÀ MAU</p1>
+            
+        </div>
+        <div class="doinet">
+            <p>               
+
+                Văn hóa ẩm thực Cà Mau là một phần quan trọng của văn hóa miền Nam Việt Nam, đặc biệt là vùng đất ven biển phía Nam cực của đất nước. Với vị trí địa lý đặc địa, Cà Mau được biết đến với một nguồn lợi hải sản phong phú và đa dạng, từ cá, tôm, sò điệp đến mực, ốc, và nhiều loại hải sản khác.
+
+Ẩm thực Cà Mau thường phản ánh sự đa dạng và phong phú của nguồn lợi hải sản. Các món ăn đặc trưng như lẩu cá bớp, cơm hến, gỏi cá trích, bún cá linh hay bánh mì cảnh cơm (bánh mì nướng với mực xào) đều mang hương vị đặc trưng của biển Cà Mau. Mỗi món ăn mang trong mình câu chuyện văn hóa, lịch sử và cách làm riêng biệt, tạo nên một phần không thể tách rời của văn hóa ẩm thực địa phương.
+
+Ngoài ra, văn hóa ẩm thực ở Cà Mau còn phản ánh qua cách phối hợp các nguyên liệu và gia vị, thường kết hợp giữa hải sản tươi ngon với rau cải, mùi thơm của dầu mè và mùi vị đặc trưng của tiêu, ớt. Sự sáng tạo và sử dụng các loại gia vị tự nhiên giúp tạo nên hương vị độc đáo và đặc trưng cho ẩm thực Cà Mau, góp phần làm nên sức hấp dẫn của vùng đất này trong lòng người dân địa phương và du khách.
+            </p>
+        </div>
+
+        <div id="click">
+          <a href="index.html">Một số đặc sản CÀ MAU bạn nên biết!</a>
+          <br><br><br>
+          Copyright <strong>@VNFoods</strong>
+
+        </div>
+        
+
+    </div>
+
+    
+</body>
+</html>
